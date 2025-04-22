@@ -56,6 +56,7 @@ __global__ void mathKernel3(float *c)
 	int tid = blockIdx.x * blockDim.x + threadIdx.x;
 	float a = 0.0;
 	float b = 0.0;
+	// TODO:why?
 	bool ipred = (tid % 2 == 0);
 	if (ipred)
 	{
